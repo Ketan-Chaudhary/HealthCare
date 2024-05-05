@@ -1,0 +1,648 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/assets/css/style.css">
+    <link rel="stylesheet" href="/assets/css/style1.css">
+    <link rel="stylesheet" href="/assets/css/style2.css">
+    <link rel="stylesheet" href="/assets/css/style3.css">
+    <link rel="stylesheet" href="/assets/css/style4.css">
+    <link rel="stylesheet" href="/global_data/navbarcss.css">
+    <link rel="stylesheet" href="/global_data/footer.css">
+    
+    <!-- <script src="https://kit.fontawesome.com/22f1aa13be.js" crossorigin="anonymous"></script> -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:400,500,700&display=swap" rel="stylesheet">
+  
+
+
+    <style>
+        .product-container {
+            max-width: 99%;
+            margin: 0 auto;
+        }
+
+        .carousel-control-product {
+            display: flex;
+            justify-content: flex-end;
+            letter-spacing: 2rem;
+            font-weight: bolder;
+            font-size: 2rem;
+        }
+
+        .carousel-control-product {
+            margin: 0 5px;
+            cursor: pointer;
+            padding-bottom: 0.2rem;
+        }
+
+        .carousel-control-product:hover {
+            opacity: 0.7;
+            /* transform: scale(1.4); */
+        }
+
+        .owl-carousel .product-item {
+            padding: 20px;
+            text-align: center;
+
+        }
+
+        .product-item {
+            border: 1px solid black;
+            background-color: #fff;
+        }
+
+        .product-image {
+            width: 200px;
+            height: 200px;
+            margin: 0 auto 10px;
+            background-color: #f1f1f1;
+        }
+
+        .product-name {
+            font-weight: bold;
+            margin-bottom: 5px;
+            font-family: 'Roboto', sans-serif;
+
+        }
+        .read-more-description-products a {
+    text-decoration: none;
+    font-size: 14px;
+    font-family: 'Roboto', sans-serif;
+    /* padding: 12px; */
+
+    }
+        .read-more-description-products a:hover {
+    /* text-decoration: none; */
+    color: red;
+    text-decoration: blue underline;
+    transition: all 2s ease-in-out;
+    }
+        .product-description {
+            color: #888;
+            margin-bottom: 0.8rem;
+        }
+
+        .product-item:hover {
+            cursor: pointer;
+            /* box-shadow: 2px 2px black; */
+        }
+    </style>
+    <!-- Add Owl Carousel CSS -->
+    <link rel="stylesheet" type="text/css"
+        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    <link rel="stylesheet" type="text/css"
+        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+    <link rel="stylesheet" href="/assets/css/responsive.css">
+
+
+    <title>Healthcare</title>
+</head>
+
+<body>
+     <div class="loading-overlay">
+        <div class="loading-icon"></div>
+    </div>
+    <header>
+        <div class="top-header">
+            <div class="logo-header"><img src="" alt="LOGO"></div>
+            <div class="content-header">
+                <div class="contact-us-phone">
+                    <section class="phone-icon"> <i class="fa-solid fa-phone"></i>
+                    </section>
+                    <section class="phone-ctx">
+                        <p id="phone-head-name">Call Us</p>
+                        <P id="phone-head-detail">8555841548</P>
+                    </section>
+                </div>
+                <div class="contact-us-mail">
+                    <section class="mail-icon"> <i class="fa-solid fa-envelope "></i>
+                    </section>
+                    <section class="mail-ctx">
+                        <p id="mail-head-name">Mail Us</p>
+                        <p id="mail-head-detail">example@gmail.com</p>
+                    </section>
+                </div>
+            </div>
+        </div>
+      
+        
+
+        <nav class="navbar" id="navbar">
+            <div class="container-navbar">
+                <!-- <a href="#" class="logo"><img src="" alt="LOgo"></a>
+                <input class="menu-toggle" type="checkbox" id="menu-toggle">
+                <label class="hamburger-icon" for="menu-toggle">
+                    <div class="line"></div>
+                    <div class="line"></div>
+                    <div class="line"></div>
+                </label> -->
+                <ul class="menu">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#AboutUs">About Us</a></li>
+                    <li><a href="/assets/Product-pages/product_page.html">Products</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#footer">Contact Us</a></li>
+                </ul>
+            </div>
+        </nav>
+        <div class="container-hamburger">
+            <div class="navbar-hamburger">
+                <div class="heading">
+                    <a href="#hamburger-icon" onclick="gfgMenu()">
+                        <i class="fa fa-bars"></i>
+                    </a>
+                </div>
+                <div class="links-hamburger">
+                    <a href="#gfg1"> Notes </a>
+                    <a href="#gfg2"> Algorithm </a>
+                    <a href="#gfg3"> Maths </a>
+                    <a href="#gfg4"> Data Structure </a>
+                    <a href="#gfg5"> Java </a>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- SlideShow -->
+    <div class="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="/assets/img/I/4.png" alt="Image 1">
+            </div>
+            <div class="carousel-item">
+                <img src="/assets/img/I/1.png" alt="Image 2">
+            </div>
+            <div class="carousel-item">
+                <img src="/assets/img/I/2.png" alt="Image 3">
+            </div>
+            <div class="carousel-item">
+                <img src="/assets/img/I/3.png" alt="Image 3">
+            </div>
+            <div class="carousel-item">
+                <img src="/assets/img/I/5.png" alt="Image 3">
+            </div>
+        </div>
+        <a class="carousel-control prev" href="#"><i class="fa-solid fa-caret-right fa-flip-horizontal"></i></a>
+        <a class="carousel-control next" href="#"> <i class="fa-solid fa-caret-right"></i></a>
+    </div>
+
+
+    <!-- SlideShow ends -->
+
+    <!-- Content -->
+
+    <!-- Welcome note -->
+    <div class="container1" id="AboutUs">
+        <div class="welcome-container">
+            <div class="col-md-12 text-center">
+                <span class="non-animate-charcter">Welcome to</span>
+                <span class="animate-charcter"> IVD Healthcare</span>
+            </div>
+        </div>
+    </div>
+    <div class="welcome-note-description">
+        Welcome to our website!
+
+        We are thrilled to have you here. At [Your Company Name], we strive to provide an exceptional online experience
+        for all our visitors. Whether you're exploring our products, seeking information, or looking for services, we're
+        here to assist you every step of the way.
+
+        Our website is designed with your needs in mind. We have carefully curated a user-friendly interface, ensuring
+        easy navigation and quick access to the information you're seeking. From detailed product descriptions to
+        informative articles, we've assembled a comprehensive resource to cater to your requirements.
+
+        Our team of dedicated professionals is committed to delivering the highest level of customer satisfaction. If
+        you have any questions, concerns, or feedback, please don't hesitate to reach out to us. We value your input and
+        are eager to assist you in any way we can.
+
+        Thank you for choosing us as your trusted online destination. We hope you enjoy your time exploring our website
+        and find exactly what you're looking for. We look forward to serving you and exceeding your expectations.
+
+        Best regards,
+        [Your Company Name]
+    </div>
+    <!-- Welcome note ends -->
+
+    <!-- About us content -->
+    <div class="content-about-us">
+        <div class="right-content-about-us">
+            <p class="about-head">More About IVD</p>
+            <p class="about-head-ctx">Established in [year of establishment], IVD Healthcare has emerged as a trusted
+                leader in the field of in
+                vitro diagnostics. With [number of years] years of experience, we have built a solid reputation for
+                delivering innovative solutions that revolutionize the diagnostic landscape.</p>
+            <p class="about-head-ctx">IVD Healthcare is committed to making a positive impact on global healthcare. By
+                delivering accurate and
+                reliable diagnostic solutions, we aim to empower healthcare professionals and contribute to improved
+                patient outcomes. With a focus on precision, innovation, and customer satisfaction, we are shaping the
+                future of diagnostics, one breakthrough at a time.</p>
+            <p class="about-head-ctx">Join us on this transformative journey. Experience the IVD Healthcare advantage
+                and discover how our
+                cutting-edge solutions can revolutionize your diagnostic practices. Together, let's pave the way for a
+                healthier world.</p>
+        </div>
+        <div class="left-content-about-us">
+            <span><img src="/assets/img/ivd.jpg" alt="image"></span>
+        </div>
+
+    </div>
+
+
+    <!-- Product Listing -->
+
+
+
+    <div class="product-container" id="product">
+        <h1 style="    text-align: center;
+        font-size: 40px;
+        font-family: 'Montserrat';
+        text-decoration: underline;
+        text-underline-offset: 9px;">
+
+            <span id="pd-our">Our</span> <span id="pd-offer">Products</span>
+        </h1>
+        <div class="carousel-control-product">
+            <span class="carousel-control-product prev-btn"> <i class="fa-solid fa-circle-right fa-rotate-180"
+                    style="color: rgb(92, 161, 184);"></i></span>
+            <span class="carousel-control-product next-btn"><i class="fa-solid fa-circle-right"
+                    style="color:rgb(92, 161, 184);"></i></span>
+        </div>
+        <div class="owl-carousel">
+            <!-- Enter the product items here -->
+            <div class="product-item">
+                <div class="product-image" style="background-image: url()"><img
+                        src="/assets/img/Products/Haema T4 - 4.jpg" alt=""></div>
+                <div class="product-name">Product 1</div>
+                <div class="product-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime, non.
+                    Nihil nesciunt unde at cumque, saepe nobis expedita eligendi, porro tempora, officiis quo?</div>
+                <div class="read-more-description-products"><a href="">Read More</a></div>
+            </div>
+            <div class="product-item">
+                <div class="product-image" style="background-image: url()"><img src="/assets/img/Products/Immu F6-6.jpg"
+                        alt=""></div>
+                <div class="product-name">Product 2</div>
+                <div class="product-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime, non.
+                    Nihil nesciunt unde at cumque, saepe nobis expedita eligendi, porro tempora, officiis quo?</div>
+                <div class="read-more-description-products"><a href="">Read More</a></div>
+            </div>
+            <div class="product-item">
+                <div class="product-image" style="background-image: url('https://via.placeholder.com/200x200')"></div>
+                <div class="product-name">Product 3</div>
+                <div class="product-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime, non.
+                    Nihil nesciunt unde at cumque, saepe nobis expedita eligendi, porro tempora, officiis quo?</div>
+                <div class="read-more-description-products"><a href="">Read More</a></div>
+            </div>
+            <div class="product-item">
+                <div class="product-image" style="background-image: url('https://via.placeholder.com/200x200')"></div>
+                <div class="product-name">Product 4</div>
+                <div class="product-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime, non.
+                    Nihil nesciunt unde at cumque, saepe nobis expedita eligendi, porro tempora, officiis quo?</div>
+                <div class="read-more-description-products"><a href="">Read More</a></div>
+            </div>
+            <div class="product-item">
+                <div class="product-image" style="background-image: url('https://via.placeholder.com/200x200')"></div>
+                <div class="product-name">Product 5</div>
+                <div class="product-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime, non.
+                    Nihil nesciunt unde at cumque, saepe nobis expedita eligendi, porro tempora, officiis quo?</div>
+                <div class="read-more-description-products"><a href="">Read More</a></div>
+            </div>
+            <!-- Add more product items as needed -->
+        </div>
+    </div>
+
+
+    <!-- Product Section ends here -->
+
+    <!-- Why to choose us -->
+
+
+
+    <section id="why-choose-us">
+        <div class="container">
+            <!-- <h2>Why Choose Us</h2> -->
+            <h1 style="text-align: center;
+            font-size: 40px;
+            font-family: 'Montserrat';
+            text-decoration: underline;
+            text-underline-offset: 9px;
+            padding-bottom: 3.3rem;">
+            
+            <span id="pd-our">Why</span>
+            <span id="pd-offer">Choose Us</span>
+        </h1>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="feature">
+                        <i class="fas fa-check-circle"></i>
+                        <h3>Quality</h3>
+                        <p>We are committed to delivering high-quality products and services to our customers.</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="feature">
+                        <i class="fas fa-users"></i>
+                        <h3>Expert Team</h3>
+                        <p>Our team consists of experienced professionals who are dedicated to providing excellent
+                            solutions.</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="feature">
+                        <i class="fas fa-clock"></i>
+                        <h3>Timely Delivery</h3>
+                        <p>We understand the importance of meeting deadlines and strive to deliver projects on time.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Customer reviews section -->
+    <div class="review-top-section">
+        <span class="left-review-text">From Our</span>
+        <span class="right-review-text">&nbsp; Customers</span>
+    </div>
+    <div class="main-container-cr">
+        <div class="grid-container-cr">
+            <div class="grid-item-1 common-rules">
+                <div class="customer-detail">
+                    <div class="customer-name">Dr. XYZ</div>
+                    <div class="customer-postion">XYZ Hospital or company</div>
+                </div>
+                <div class="review-me customer-00">
+                    <h4> " Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consequuntur omnis quam tenetur
+                        sunt quas neque ullam sapiente quasi voluptatum sint fugiat mollitia. " </h4>
+                </div>
+                <div class="review-detail customer-01">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti iusto dolores, vero quos aliquid
+                    sapiente modi accusamus molestias a velit debitis nam ipsa ratione laboriosam illo ducimus doloribus
+                    sequi autem et odit facilis fugiat mollitia fuga perspiciatis. Rem quisquam, porro ab, ducimus
+                    mollitia perferendis vitae accusamus pariatur nobis quos, excepturi maiores iusto quidem temporibus
+                    incidunt!
+                </div>
+            </div>
+            <div class="grid-item-2 common-rules">
+                <div class="customer-detail">
+                    <div class="customer-name-">Dr. XYZ</div>
+                    <div class="customer-postion">XYZ Hospital or company</div>
+                </div>
+                <div class="review-me-2 customer-10">
+                    <h4> " Lorem ipsum dolor, sit amet consectetur adipisicing elit. Magni ad ab error. " </h4>
+                </div>
+                <div class="review-detail-2 customer-11">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium illo illum, omnis dolorem a
+                    laudantium voluptatem velit nulla deserunt et.
+                </div>
+            </div>
+            <div class="grid-item-3 common-rules">
+                <div class="customer-detail">
+                    <div class="customer-name">Dr. XYZ</div>
+                    <div class="customer-postion">XYZ Hospital or company</div>
+                </div>
+                <div class="review-me customer-20">
+                    <h4> " Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consequuntur omnis quam tenetur
+                        sunt quas neque ullam sapiente quasi voluptatum sint fugiat mollitia. " </h4>
+                </div>
+                <div class="review-detail customer-21">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti iusto dolores, vero quos aliquid
+                    sapiente modi accusamus molestias a velit debitis nam ipsa ratione laboriosam illo ducimus doloribus
+                    sequi autem et odit facilis fugiat mollitia fuga perspiciatis. Rem quisquam, porro ab, ducimus
+                    mollitia p
+                </div>
+            </div>
+            <div class="grid-item-4 common-rules">
+                <div class="customer-detail">
+                    <div class="customer-name">Dr. XYZ</div>
+                    <div class="customer-postion">XYZ Hospital or company</div>
+                </div>
+                <div class="review-me-4 customer-30">
+                    <h4> " Lur, adipisicing e quas neque ullaapiente quasi voluptatum sint fugiat mollitia. " </h4>
+                </div>
+                <div class="review-detail-4 customer-31">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam libero expedita accusamus dignissimos
+                    excepturi, ex beatae eos provi
+                </div>
+            </div>
+            <div class="grid-item-5 common-rules">
+                <div class="customer-detail">
+                    <div class="customer-name">Dr. XYZ</div>
+                    <div class="customer-postion">XYZ Hospital or company</div>
+                </div>
+                <div class="review-me">
+                    <h4> " Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consequuntur omnis quam tenetur
+                        sunt quas neque ullam sapiente quasi voluptatum sint fugiat mollitia. " </h4>
+                </div>
+                <div class="review-detail">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti iusto dolores, vero quos aliquid
+                    sapiente modi accusamus molestias a velit debitis nam ipsa ratione laboriosam illo ducimus doloribus
+                    sequi autem et odit facilis fugiat mollitia fuga perspiciatis. Rem quisquam, porro ab, ducimus
+                    mollitia perferendis vitae accusamus pariatur nobis quos, excepturi maiores iusto quidem temporibus
+                    incidunt!
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--  -->
+    <div class="carousel-container-testimonials">
+        <div class="carousel-slide-testimonials">
+            <div class="testimonial">
+                <h2>Testimonial 1</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eget leo eu metus tristique vehicula.
+                </p>
+                <p class="testimonial-author">John Doe, CEO at ABC Company</p>
+            </div>
+            <div class="testimonial">
+                <h2>Testimonial 2</h2>
+                <p>Ut nec sapien eget tortor vulputate interdum. In id lacus eu mauris pretium aliquet.</p>
+                <p class="testimonial-author">Jane Smith, Manager at XYZ Corporation</p>
+            </div>
+            <div class="testimonial">
+                <h2>Testimonial 3</h2>
+                <p>Proin interdum quam sed elit feugiat, nec egestas felis bibendum. Fusce feugiat augue non lacinia
+                    elementum.</p>
+                <p class="testimonial-author">Robert Johnson, Founder of 123 Solutions</p>
+            </div>
+        </div>
+        <div class="controls-test">
+            <span class="control-btn-test" onclick="showSlide(0)"></span>
+            <span class="control-btn-test" onclick="showSlide(1)"></span>
+            <span class="control-btn-test" onclick="showSlide(2)"></span>
+        </div>
+    </div>
+
+
+    <!-- Lowest footer -->
+    <footer id="footer">
+        <div class="main-footer">
+            <div class="upper-footer">
+                <div class="upper-footer-content">
+                    <div class="footer-content-item-1">
+                        <div class="content-1">
+                            <div class="icon-top-footer">
+                                <i class="fa-solid fa-location-dot common-rules-footer"></i>
+                            </div>
+                            <div class="content-1-text">
+                                <h4>Find Us</h4>
+                                <span>Lorem ipsum dolor sit amet</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="footer-content-item-2">
+                        <div class="content-2">
+                            <div class="icon-top-footer">
+                                <i class="fa-solid fa-phone fa-bounce common-rules-footer"></i>
+                            </div>
+                            <div class="content-2-text">
+                                <h4>Call Us</h4>
+                                <span>1234567890</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="footer-content-item-3">
+                        <div class="content-3">
+                            <div class="icon-top-footer">
+
+                                <i class="fa-solid fa-envelope common-rules-footer"></i>
+                            </div>
+                            <div class="content-3-text">
+                                <h4>Mail Us</h4>
+                                <span>example@gmail.com</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- part 2 -->
+            <div class="middle-footer">
+                <div class="middle-footer-content">
+                    <div class="middle-footer-ctx-1">
+                        <div class="logo-footer">
+                            <img src="" alt="LOGo">
+                        </div>
+                        <div class="ctx-1-text">
+                            <p> IVD Healthcare" - Empowering Precision Diagnostics with Cutting-Edge Solutions
+                            </p>
+                            where precision diagnostics meet advanced technology. As a leading provider of innovative
+                            solutions for in vitro diagnostics, we are committed to revolutionizing healthcare by
+                            delivering accurate and reliable results to healthcare professionals worldwide.
+                        </div>
+                        <div class="social-head-footer">
+                            <p>Follow Us</p>
+                        </div>
+                        <div class="follow-us-footer">
+                            <i class="fa-brands fa-facebook"></i>
+                            <i class="fa-brands fa-square-twitter"></i>
+                            <i class="fa-brands fa-linkedin"></i>
+                        </div>
+                    </div>
+                    <div class="middle-footer-ctx-2">
+                        <div class="ctx-2-head">
+                            Useful Links
+                        </div>
+                        <div class="ctx-2-links">
+                            <a href="">Home</a>
+                            <a href="">Services</a>
+                            <a href="">About Us</a>
+                            <a href="">Contact Us</a>
+                            <a href="">Latest Blog</a>
+                        </div>
+                    </div>
+                    <div class="middle-footer-ctx-3">
+                        <div class="ctx-3-head">
+                            Products
+                        </div>
+                        <div class="ctx-products">
+                            <a href="">Product 1</a>
+                            <a href="">Product 2</a>
+                            <a href="">Product 3</a>
+                            <a href="">Product 4</a>
+                        </div>
+                    </div>
+                    <div class="middle-footer-ctx-4">
+                        <div class="ctx-4-head">
+                            We are Located At
+                        </div>
+                        <div class="footer-maps">
+                            <iframe
+                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3504.6879721903824!2d77.28767217488507!3d28.549097075710318!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390ce5c910dc5baf%3A0xe54c7178f2d6041c!2sJasola%20old%20village!5e0!3m2!1sen!2sin!4v1688148655567!5m2!1sen!2sin"
+                                width="500" height="250" style="border:0; border-radius: 1rem;" allowfullscreen="" loading="lazy"
+                                referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Part 3 -->
+            <div class="bottom-footer">
+                <div class="cpy-ctx">
+                    <p>Copyright &copy; 2023, All Right Reserved <a href="">IVD</a> </p>
+                </div>
+            </div>
+
+
+
+
+        </div>
+    </footer>
+
+    <!--  -->
+
+
+
+    <script src="https://kit.fontawesome.com/22f1aa13be.js" crossorigin="anonymous"></script>
+    <script src="/new.js"></script>
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <script>
+        // Initialize the carousel
+        const owl = $('.owl-carousel').owlCarousel({
+            items: 5,  // Display at least 5 items
+            margin: 20,
+            loop: true,
+            autoplay: true,
+            autoplayTimeout: 3000,
+            responsive: {
+                0: {
+                    items: 1
+                },
+                768: {
+                    items: 2
+                },
+                1024: {
+                    items: 3
+                },
+                1280: {
+                    items: 5
+                }
+            }
+        });
+
+        // Pause carousel on item hover
+        $('.owl-carousel').on('mouseover', '.product-item', function () {
+            owl.trigger('stop.owl.autoplay');
+        });
+
+        // Resume carousel on item mouseout
+        $('.owl-carousel').on('mouseout', '.product-item', function () {
+            owl.trigger('play.owl.autoplay');
+        });
+
+        // Carousel control buttons
+        $('.prev-btn').click(function () {
+            owl.trigger('prev.owl.carousel');
+        });
+
+        $('.next-btn').click(function () {
+            owl.trigger('next.owl.carousel');
+        });
+    </script>
+
+</body>
+</body>
+
+</html>

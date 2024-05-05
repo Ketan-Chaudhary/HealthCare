@@ -1,0 +1,125 @@
+.product-new-image{
+    height: 570px;
+    width: 570px;
+}
+  @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
+
+
+.product-new-image img{
+    height: 570px;
+    width: 570px;
+}
+
+.enclose-product-upper {
+    display: inline-flex;
+    gap: 5.5rem;
+    margin: auto;
+    margin: 0 5rem;
+}
+
+.porduct-tech-spec {
+    /* align-items: center; */
+    height: 530px;
+    width: 500px;
+    margin: auto;
+    /* text-align: center; */
+    padding: 2rem;
+    font-family: 'Roboto', sans-serif;
+
+}
+
+section#product-spec {
+    width: 79%;
+    background:  rgba(251, 251, 251, 1);
+    margin: auto;
+}
+
+p#product-spec-title {
+    padding: 1.3rem 0rem 3px;
+    font-size: 23px;
+    border-bottom: 3px solid #1d5779;
+    color: gray;
+    width: 11%;
+    margin: 0 1.5rem;
+    font-size: 16px;
+}
+
+.product-desc-down {
+    padding: 1.6rem;
+    line-height: 1.8;
+    color: darkslategrey;
+}
+
+hr {
+    position: relative;
+    border-right: none;
+    border-top: none;
+    border-left: none;
+    bottom: 1.5px;
+    /* z-index: -1; */
+}
+
+table {
+    border-collapse: collapse;
+    color: #878685;
+    font-weight: 600;
+    /* width: 50%; */
+    /* margin: auto; */
+}
+
+ td {
+    /* border: 1px solid #dddddd; */
+    /* text-align: left; */
+    padding: 10px;
+    border-top: 0.5px dotted #808080;
+    /* border-top: 1px solid white; */
+}
+
+th {
+    /* background-color: #f2f2f2; */
+}
+
+tr:nth-child(even) {
+    /* background-color: #f2f2f2; */
+}
+
+td{
+    /* width: 100%; */
+}
+
+strong#mach-name {
+    /* text-align: center; */
+    /* width: 17px; */
+    display: flex;
+    /* margin: auto; */
+    font-weight: 700;
+    font-size: 23px;
+    margin-bottom: 10px;
+    /* padding-bottom: 25px; */
+}
+
+strong#mach-features {
+    font-weight: 600;
+    display: flex;
+    /* margin-bottom: 1rem; */
+    margin: 1.3rem 0;
+    font-size: 18px;
+    color: gray;
+}
+
+td.table-spec-name {
+    width: 80%;
+    font-size: 17px;
+    padding: 20px;
+}
+
+td.tabel-spec-det {
+    font-weight: 100;
+    color: #0000008f;
+}
+
+.product-desc-down-list{
+    /* background: w; */
+    font-family: 'Roboto', sans-serif;
+
+}
